@@ -8,14 +8,14 @@ function HomePage() {
   return (
     <>
         <div>
-            <div className="relative">
+            <div className="relative mt-35">
                 <div className=" w-full ">
                     <div className=" bg-[#000] relative h-[100dvh] rounded-4xl flex justify-center pt-16 overflow-clip mb-48">
                         <div className="w-full top-0 l-0">
                             <div className="w-[58rem] h-[58rem] relative border-red border-[120px] blur-sm left-20 r-0 rounded-full z-0" />
                         </div>
                         <div className="absolute w-full h-full top-0">
-                            <div className="relative w-3xl top-14 h-dvh left-64 pt-20 bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-04/w6VB3xE6ej.png)] bg-cover bg-no-repeat " />
+                            <div className="relative  top-14 h-dvh bg-size-[50%] left-64 pt-20 bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-04/w6VB3xE6ej.png)] bg-cover bg-no-repeat " />
                         </div>
 
                         <span className="text-[216px] font-bold text-center text-white/60 absolute top-[27rem] whitespace-wrap z-[3]">
@@ -63,7 +63,7 @@ function HomePage() {
                 <div className="h-52 w-52 bg-red rounded-full right-48 absolute"></div>
         </div>
 
-        <div className=" pl-28 wrap-normal mb-52 ">
+        <div className=" h-[100dvh] pl-28 wrap-normal mb-52 ">
             <h2 className="text-7xl font-light text-black/20 leading-14 tracking-tight pr-60  mt-10 mb-24">
             Featured Articles:
             </h2>

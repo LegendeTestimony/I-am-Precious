@@ -1,37 +1,39 @@
 import React from "react";
 
-export default function Main() {
+function AboutPage() {
   return (
-    <div className="main-container w-[1728px] h-[5612px] bg-[#fff] relative overflow-hidden mx-auto my-0">
+    <>
+    <div className="main-container h-[5612px] mt-60 relative overflow-hidden mx-auto my-0">
     
-      <span className="flex w-[1279px] h-[428px] justify-start items-start font-['Inter'] text-[113.41999816894531px] font-normal leading-[137.264px] text-[#000] relative text-left z-[16] mt-[239px] mr-0 mb-0 ml-[137px]">
+      <h1 className="flex h-98 my-32 font-inter text-[113px] font-normal text-black">
         About Me
-      </span>
-      <div className="w-[1442px] h-[182px] relative z-[24] mt-[8px] mr-0 mb-0 ml-[137px]">
-                <div className="flex relative justify-center items-center mt-10 mb-38">
+      </h1>
+        
+        <div className="flex justify-center items-center mt-10 mb-38">
                 <div className="bg-red w-full h-0.5"></div>
-                <div className="absolute justify-center items-center right-48">
-                    <div className=" flex justify-center items-center h-52 w-52 border-8 bg-white border-red rounded-full">
-                    <div className="h-38 w-38 bg-red rounded-full"></div>
+                    <div className="absolute justify-center items-center right-48">
+                        <div className=" flex justify-center items-center h-52 w-52 border-8 bg-white border-red rounded-full">
+                            <div className="h-38 w-38 bg-red rounded-full"></div>
+                        </div>
                     </div>
                 </div>
+        <div className="grid grid-cols-[1fr_2fr] gap-x-[50px] items-start">
+
+          <span className="font-Inter text-[27px] font-light leading-[33.184px] text-left">
+            Precious Ebere is a renowned development practitioner and policy
+            analyst with specific interest in EdTech, Democracy, Corruption, Human
+            Rights, Governance & Leadership Development; where she strives to
+            bridge inequality gaps in African democracy whilst advocating for
+            effective interventions that provide equal access to education and
+            long-term learning outcomes for marginalized Nigerian children by
+            engaging critical stakeholders, encouraging youths to participate
+            effectively in pushing for accountability and transparency both at the
+            grassroots and National level.
+          </span>
+          <div className="w-full h-[1097px] bg-cover bg-no-repeat" style={{ backgroundImage: `url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-23/BmpkoCRNRh.png)` }} />
         </div>
-      </div>
-      <div className="w-[1468px] h-[1097px] relative z-[18] mt-[79px] mr-0 mb-0 ml-[137px]">
-        <span className="flex w-[424px] h-[1013px] justify-start items-start font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] absolute top-0 left-0 text-left z-[18]">
-          Precious Ebere is a renowned development practitioner and policy
-          analyst with specific interest in EdTech, Democracy, Corruption, Human
-          Rights, Governance & Leadership Development; where she strives to
-          bridge inequality gaps in African democracy whist advocating for
-          effective interventions that provide equal access to education and
-          long-term learning outcomes for marginalized Nigerian children by
-          engaging critical stakeholders, encouraging youths to participate
-          effectively in pushing for accountability and transparency both at the
-          grassroots and National level.
-        </span>
-        <div className="w-[993px] h-[1097px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-23/BmpkoCRNRh.png)] bg-cover bg-no-repeat absolute top-0 left-[475px] z-[17]" />
-      </div>
-      <span className="flex w-[792px] h-[536px] justify-start items-start font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left z-[19] mt-[154px] mr-0 mb-0 ml-[137px]">
+
+      <span className="flex w-[792px] h-[536px] justify-start items-start font-Inter text-[27px] font-light leading-[33.184px] text-[#000] relative text-left z-[19] mt-[154px] mr-0 mb-0 ml-[137px]">
         Precious earned a Master's degree in Social and Public Policy from
         Cardiff University in Wales, United Kingdom, and she is also a Global
         Ambassador, representing the following organizations on a global scale:
@@ -49,7 +51,7 @@ export default function Main() {
         United Kingdom.
         <br />
       </span>
-      <span className="flex w-[792px] h-[536px] justify-start items-start font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left z-20 mt-[361px] mr-0 mb-0 ml-[813px]">
+      <span className="flex w-[792px] h-[536px] justify-start items-start font-Inter text-[27px] font-light leading-[33.184px] text-[#000] relative text-left z-20 mb-10">
         As a member of the Junior Chamber International Abuja Unity Group,
         Abuja, Nigeria for approximately seven years, Precious Ebere was
         responsible for the execution of numerous projects assigned to her,
@@ -65,8 +67,8 @@ export default function Main() {
         able to improve their computer skills and knowledge in agricultural
         research and production.
       </span>
-      <div className="w-[1468px] h-[1151px] font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] relative text-left z-[21] mt-[106px] mr-0 mb-0 ml-[137px]">
-        <span className="font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left">
+      <div className="w-[1468px] h-[1151px] font-Inter text-[27px] font-light leading-[33.184px] relative text-left z-[21] mb-10">
+        <span className="font-Inter text-[27px] font-light text-[#000] relative text-left">
           In 2021, Precious was selected as the first female Nigerian to
           coordinate the Commonwealth Students Association (CSA) Network, United
           Kingdom. She has also served as the Vice President, Postgraduate
@@ -82,10 +84,10 @@ export default function Main() {
           of work. Precious came up with an Innovation called DO Skill Up Climb
           Up, a 10-year Skill-Up-Climb-Up human capacity development project, (
         </span>
-        <span className="font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left underline">
+        <span className="font-Inter text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left underline">
           https://dotakeaction.org/skill-up-climb-up/
         </span>
-        <span className="font-['Inter'] text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left">
+        <span className="font-Inter text-[27.420000076293945px] font-light leading-[33.184px] text-[#000] relative text-left">
           ). It was primarily targeted at addressing the challenges of skills
           deficit, poverty, unemployment rates and unpreparedness of both
           African businesses and the teeming population of young people for the
@@ -133,13 +135,13 @@ export default function Main() {
           <br />
         </span>
       </div>
-      <div className="w-[1478px] h-[354px] bg-[#d60000] rounded-[50px] relative z-[27] mt-[63px] mr-0 mb-0 ml-[127px]">
-        <div className="w-[1382px] h-[245px] font-['Inter'] text-[40.41999816894531px] font-light leading-[48.917px] relative text-center z-[27] mt-[58px] mr-0 mb-0 ml-[53px]">
-          <span className="font-['Inter'] text-[40.41999816894531px] font-medium leading-[48.917px] text-[#fff] relative text-center">
+      <div className="w-[1478px] h-[354px] bg-[#d60000] rounded-[50px] relative z-[27] mt-[63px]">
+        <div className="w-[1382px] h-[245px] font-Inter text-[40.41999816894531px] font-light leading-[48.917px] relative text-center z-[27] mt-[58px] mr-0 mb-0 ml-[53px]">
+          <span className="font-Inter text-[40.41999816894531px] font-medium leading-[48.917px] text-[#fff] relative text-center">
             With DO, Precious' future plans are embedded in her VISION
             STATEMENT:
           </span>
-          <span className="font-['Inter'] text-[40.41999816894531px] font-light leading-[48.917px] text-[#fff] relative text-center">
+          <span className="font-Inter text-40 font-light leading-[48.917px] text-[#fff] relative text-center">
             {" "}
             Change by Africans for Africa: she envisions a Nigeria where every
             citizen fuels Africa's sustainable development. By 2030, she aims to
@@ -149,5 +151,8 @@ export default function Main() {
         </div>
       </div>
     </div>
+    </>
   );
 }
+
+export default AboutPage;

@@ -30,7 +30,7 @@ function Navbar() {
 
   // Logo component to avoid repetition
   const Logo = ({ className = "", iconSize = "w-12 h-12", textSize = "text-3xl" }) => (
-    <div className={`flex items-center ${className}`}>
+    <div className={`flex items-center ${className}`} >
       <div
         className={`${iconSize} bg-cover bg-no-repeat`}
         style={{ backgroundImage: "url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-04/D0AWKyUYTF.png)" }}
@@ -42,15 +42,8 @@ function Navbar() {
     </div>
   );
 
-  // Phone icon component
-  const PhoneIcon = ({ color = "white", bgColor = "bg-black", size = "w-14 h-14" }) => (
-    <a href="tel:+1234567890" className={`flex items-center justify-center ${size} bg-black rounded-full`}>
-      <i className={`fi fi-ss-phone-flip text-${color} text-2xl pt-1`}></i>
-    </a>
-  );
-
   return (
-    <div className="navbar-container w-full flex justify-between font-dmsans items-center gap-96 my-8 mx-auto">
+    <div className=" w-full flex justify-between font-dmsans items-center gap-96 my-8 mx-auto">
       {/* Left logo section - always visible */}
       <div className="logo-section flex-shrink-0 bg-black rounded-full px-10 py-4 flex items-center z-10">
         <a href="/" className="flex items-center">
@@ -66,7 +59,7 @@ function Navbar() {
               <a 
                 key={index}
                 href={link.href} 
-                className=" text-center text-base w-fit flex text-white gap-16 hover:text-gray-200 whitespace-wrap"
+                className="text-center text-base w-fit flex text-white gap-16 hover:text-gray-200 whitespace-wrap"
               >
                 {link.text.split(" ").map((word, i, arr) => (
                   <React.Fragment key={i}>
@@ -77,8 +70,11 @@ function Navbar() {
               </a>
             ))}
             
-            {/* Phone icon */}
-            <PhoneIcon color="white" bgColor="bg-white" />
+            {/* Contact button - added inside the desktop menu */}
+            <a href="tel:+234 813 051 8751" className="flex items-center justify-center bg-black rounded-full px-4 py-2">
+              <i className="fi fi-ss-phone-flip text-white text-2xl pt-1 mr-2"></i>
+              <span className="text-white">Contact</span>
+            </a>
           </nav>
         </div>
       )}
@@ -116,9 +112,6 @@ function Navbar() {
               )}
             </svg>
           </button>
-          
-          {/* Phone icon for mobile */}
-          <PhoneIcon size="w-12 h-12" />
         </div>
       )}
 
@@ -157,7 +150,7 @@ function Navbar() {
                 <a 
                   key={index}
                   href={link.href} 
-                  className="text-white text-xl text-nowrap py-3 border-b border-white/20 flex items-center"
+                  className="text-white text-xl  text-nowrap py-3 border-b flex items-center"
                 >
                   {link.text}
                 </a>
@@ -166,7 +159,7 @@ function Navbar() {
 
             <div className="mt-8">
               <a href="tel:+234 813 051 8751" className="text-white text-xl flex items-center">
-                <i className="fi fi-rr-phone-call mr-2 "></i>
+                <i className="fi fi-rr-phone-call mr-2"></i>
                 Contact
               </a>
             </div>
