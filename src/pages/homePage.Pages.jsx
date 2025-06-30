@@ -185,8 +185,7 @@ function HomePage() {
       <section className="max-w-7xl mx-auto px-8 mb-32">
         <div className="max-w-4xl">
           <p className="text-5xl font-light text-gray-700 leading-tight tracking-tight relative">
-            <span className="text-6xl font-bold text-red-500 float-left mr-4 leading-none">S</span>
-            he is a development practitioner, education technology professional, policy analyst, and social innovator on a mission to inspire a billion Africans to take action for sustainable development by 2050. Join the movement for positive change and explore impactful initiatives.
+            She is a development practitioner, education technology professional, policy analyst, and social innovator on a mission to inspire a billion Africans to take action for sustainable development by 2050. Join the movement for positive change and explore impactful initiatives.
           </p>
           <div className="mt-12 flex items-center space-x-6">
             <div className="w-16 h-1 bg-gradient-to-r from-red-500 to-purple-500 rounded-full"></div>

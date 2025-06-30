@@ -7,6 +7,7 @@ import './App.css';
 import Navbar from './components/navbar.components.jsx';
 import HomePage from './pages/homePage.pages.jsx';
 import AboutPage from './pages/aboutPage.Pages.jsx';
+import BlogPage from './pages/blogPage.Pages.jsx';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -59,9 +60,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/blog" element={<BlogPage />} />
                 <Route path="/projects" element={<div className="min-h-screen">Projects Page</div>} />
                 <Route path="/gallery" element={<div className="min-h-screen">Gallery Page</div>} />
-                <Route path="/blog" element={<div className="min-h-screen">Blog Page</div>} />
                 <Route path="/impact" element={<div className="min-h-screen">Impact Metrics Page</div>} />
                 <Route path="/reports" element={<div className="min-h-screen">Reports Page</div>} />
                 <Route path="/community" element={<div className="min-h-screen">Community Page</div>} />
